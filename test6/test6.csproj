@@ -1,0 +1,104 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="Views\Login\**" />
+    <Content Remove="Migrations\**" />
+    <Content Remove="Views\Login\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="Views\Login\**" />
+    <None Remove="Migrations\**" />
+    <None Remove="Views\Login\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\css\easy-responsive-tabs.css" />
+    <Content Remove="wwwroot\lib\css\global.css" />
+    <Content Remove="wwwroot\lib\css\slider.css" />
+    <Content Remove="wwwroot\lib\css\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\css\easy-responsive-tabs.css" />
+    <None Include="wwwroot\lib\css\global.css" />
+    <None Include="wwwroot\lib\css\slider.css" />
+    <None Include="wwwroot\lib\css\style.css" />
+    <None Include="wwwroot\lib\font\Amble-Regular-webfont.ttf" />
+    <None Include="wwwroot\lib\images\about_img.jpg" />
+    <None Include="wwwroot\lib\images\arrow-next.png" />
+    <None Include="wwwroot\lib\images\arrow-prev.png" />
+    <None Include="wwwroot\lib\images\arrow_up.png" />
+    <None Include="wwwroot\lib\images\compare.png" />
+    <None Include="wwwroot\lib\images\delivery-img1.jpg" />
+    <None Include="wwwroot\lib\images\delivery-img2.jpg" />
+    <None Include="wwwroot\lib\images\delivery-img3.jpg" />
+    <None Include="wwwroot\lib\images\dribbble.png" />
+    <None Include="wwwroot\lib\images\drop_arrow-hover.png" />
+    <None Include="wwwroot\lib\images\drop_arrow.png" />
+    <None Include="wwwroot\lib\images\facebook.png" />
+    <None Include="wwwroot\lib\images\feature-pic1.jpg" />
+    <None Include="wwwroot\lib\images\feature-pic2.jpg" />
+    <None Include="wwwroot\lib\images\feature-pic3.jpg" />
+    <None Include="wwwroot\lib\images\feature-pic4.jpg" />
+    <None Include="wwwroot\lib\images\linkedin.png" />
+    <None Include="wwwroot\lib\images\list-img.png" />
+    <None Include="wwwroot\lib\images\logo.png" />
+    <None Include="wwwroot\lib\images\new-pic1.jpg" />
+    <None Include="wwwroot\lib\images\new-pic2.jpg" />
+    <None Include="wwwroot\lib\images\new-pic3.jpg" />
+    <None Include="wwwroot\lib\images\new-pic4.jpg" />
+    <None Include="wwwroot\lib\images\newsimg1.jpg" />
+    <None Include="wwwroot\lib\images\newsimg2.jpg" />
+    <None Include="wwwroot\lib\images\newsimg3.jpg" />
+    <None Include="wwwroot\lib\images\preview.jpg" />
+    <None Include="wwwroot\lib\images\price-rating.png" />
+    <None Include="wwwroot\lib\images\productslide-1.jpg" />
+    <None Include="wwwroot\lib\images\productslide-2.jpg" />
+    <None Include="wwwroot\lib\images\productslide-3.jpg" />
+    <None Include="wwwroot\lib\images\productslide-4.jpg" />
+    <None Include="wwwroot\lib\images\productslide-5.jpg" />
+    <None Include="wwwroot\lib\images\productslide-6.jpg" />
+    <None Include="wwwroot\lib\images\quality-rating.png" />
+    <None Include="wwwroot\lib\images\search.png" />
+    <None Include="wwwroot\lib\images\skype.png" />
+    <None Include="wwwroot\lib\images\slide-1-image.png" />
+    <None Include="wwwroot\lib\images\slide-2-image.jpg" />
+    <None Include="wwwroot\lib\images\slide-3-image.jpg" />
+    <None Include="wwwroot\lib\images\tag.png" />
+    <None Include="wwwroot\lib\images\thumbnailslide-1.jpg" />
+    <None Include="wwwroot\lib\images\thumbnailslide-2.jpg" />
+    <None Include="wwwroot\lib\images\thumbnailslide-3.jpg" />
+    <None Include="wwwroot\lib\images\thumbnailslide-4.jpg" />
+    <None Include="wwwroot\lib\images\thumbnailslide-5.jpg" />
+    <None Include="wwwroot\lib\images\thumbnailslide-6.jpg" />
+    <None Include="wwwroot\lib\images\Thumbs.db" />
+    <None Include="wwwroot\lib\images\twitter.png" />
+    <None Include="wwwroot\lib\images\value-rating.png" />
+    <None Include="wwwroot\lib\images\wishlist.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts" Version="5.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
