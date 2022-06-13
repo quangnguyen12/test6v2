@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace test6
 {
     
@@ -34,6 +35,7 @@ namespace test6
             services.AddRazorPages();
             services.AddAuthorization();
             services.AddControllersWithViews();
+            
 
         }
 

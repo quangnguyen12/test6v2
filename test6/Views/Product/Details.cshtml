@@ -1,0 +1,39 @@
+﻿@model test6.Models.ProductInfo
+@{
+    ViewData["Tilte"] = "Details";
+}
+<h2>Details</h2>
+<div>
+    <h4>Product Information</h4>
+    <hr />
+    <dl class ="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Name)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Type)
+        </dt>
+          <dt>
+            @Html.DisplayNameFor(model => model.origin)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.origin)
+        </dt>
+          <dt>
+            @Html.DisplayNameFor(model => model.Describe)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Describe)
+        </dt>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID"></a>
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using test6.Areas.Identity.Data;
 using test6.Data;
 
 [assembly: HostingStartup(typeof(test6.Areas.Identity.IdentityHostingStartup))]
@@ -18,8 +19,8 @@ namespace test6.Areas.Identity
                 services.AddDbContext<test6Context>(options =>
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("test6ContextConnection")));
-
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+               
+                services.AddDefaultIdentity<test6User>().AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<test6Context>();
             });
         }
