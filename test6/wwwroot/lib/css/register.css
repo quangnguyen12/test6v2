@@ -1,0 +1,14 @@
+﻿.col-md-5 {
+    
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 0 auto;
+}
+input {
+    width: 100%;
+}
+

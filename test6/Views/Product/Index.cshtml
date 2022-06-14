@@ -1,0 +1,42 @@
+﻿@model IEnumerable<test6.Models.ProductInfo>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<p>
+    <a asp-action ="Create">Create New</a>
+</p>
+@*For display Emplyee info *@
+<div class =" table table-striped">
+
+    <div class="container-items">
+        @foreach(var emp in Model)
+        {
+            <div class="item-content">
+                
+                <div>
+                    @Html.DisplayFor(modelItem=>emp.Name)
+                </div>
+                <div>
+                  <img src=@Html.DisplayFor(modelItem=>emp.Type) />
+                  @* @Html.DisplayFor(modelItem=>emp.Type)*@
+                </div>
+                @*<div>
+                    @Html.DisplayFor(modelItem=>emp.origin)
+                </div>
+                *@
+                <div>
+                    @Html.DisplayFor(modelItem=>emp.Describe)
+                </div>
+                <div class="detail-options">
+                    <a asp-action ="Edit" asp-route-id ="@emp.ID">Edit</a>
+                    <a asp-action ="Details" asp-route-id ="@emp.ID">Details</a>
+                    <a asp-action ="Delete" asp-route-id ="@emp.ID">Delete</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

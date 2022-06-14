@@ -25,6 +25,7 @@
   <ItemGroup>
     <None Include="wwwroot\lib\css\easy-responsive-tabs.css" />
     <None Include="wwwroot\lib\css\global.css" />
+    <None Include="wwwroot\lib\css\login.css" />
     <None Include="wwwroot\lib\css\slider.css" />
     <None Include="wwwroot\lib\css\style.css" />
     <None Include="wwwroot\lib\font\Amble-Regular-webfont.ttf" />
