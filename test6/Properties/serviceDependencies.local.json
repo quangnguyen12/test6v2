@@ -11,6 +11,11 @@
     "mssql3": {
       "type": "mssql.local",
       "connectionId": "ConnectionStrings:test6ContextConnection"
+    },
+    "mssql4": {
+      "secretStore": null,
+      "type": "mssql.local",
+      "connectionId": "test5"
     }
   }
 }

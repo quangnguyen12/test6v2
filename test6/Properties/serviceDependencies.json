@@ -11,6 +11,10 @@
     "mssql3": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:test6ContextConnection"
+    },
+    "mssql4": {
+      "type": "mssql",
+      "connectionId": "test5"
     }
   }
 }

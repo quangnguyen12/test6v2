@@ -1,0 +1,44 @@
+﻿@model test6.Models.ProductInfo
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Delete</h1>
+<div>
+    <h4>Product Information</h4>
+    <hr />
+    <dl class ="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Name)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Type)
+        </dt>
+          <dt>
+            @Html.DisplayNameFor(model => model.origin)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.origin)
+        </dt>
+          <dt>
+            @Html.DisplayNameFor(model => model.Describe)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Describe)
+        </dt>
+    </dl>
+    <form asp-action ="Delete">
+        <input type ="hidden" asp-for="ID"/>
+        <input type ="submit" value ="Delete" class="btn-btn-danger"/>
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+
+
